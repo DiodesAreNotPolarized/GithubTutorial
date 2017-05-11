@@ -3,20 +3,16 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style>
-		* :not(code){
-			font-family:'Roboto', sans-serif;
-		}
+		* :not(code) { font-family:'Roboto', sans-serif; }
 		code {
 			background-color: #DDDDDD;
+			white-space: nowrap;
 		}
-		h1 {
-			font-size: 30pt;
-		}
-		h2 {
-			font-size: 20pt;
-		}
+		h1 { font-size: 30pt; }
+		h2 { font-size: 20pt; }
+
 		div {
-			padding-left: 20%;
+			padding-left: 15%;
 			padding-right: 15%;
 		}
 	</style>
@@ -33,7 +29,7 @@
 		<p>
 			First, you should navigate to the folder where all your project code is going to be stored. In the folder, right click, and there should be an option that says "Git Bash Here". If not, then shift+right click, and then click "Open command window here". Type <code>git</code> into the console, and a list of commands should appear. If not, you haven't installed git corrrectly.<br>
 			If it's working fine, type <code>git init</code>. It shoud give you <code>Initialized empty Git repository in &lt;folder&gt;/.git/</code>.<br>
-			You should then make sure you're commiting into your GitHub repository you made before. To do this, use the command <code>git remote add origin https://github.com/Username/RepositoryName.git</code>. The .git that you should use should be shown in the screen where you have your empty repository, and should follow the pattern shown in the code sample.
+			You should then set it to commit into your GitHub repository you made before. To do this, use the command <code>git remote add origin https://github.com/Username/RepositoryName.git</code>. The .git that you should use should be shown in the screen where you have your empty repository, and should follow the pattern shown in the code sample.
 		</p>
 		<h2>Updating the Remote Repository</h2>
 		<p>
