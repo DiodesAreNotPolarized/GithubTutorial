@@ -27,14 +27,15 @@
 		<h1>Getting Started with Git and GitHub</h1>
 		<h2>Installing Git</h2>
 		<p>
-			First, you're going to have to download git from <a href="https://git-scm.com/downloads">here</a>. Just choose the operating system you have, and install git, following the instructions in the installer (you should keep the default settings). You should also create an account at <a href="github.com">GitHub</a>, and make a new (empty) repository.
+			First, you're going to have to download git from <a href="https://git-scm.com/downloads">here</a>. Just choose the operating system you have, and install git, following the instructions in the installer (you should keep the default settings). You should also create an account at <a href="github.com">GitHub</a>, and make a new (empty) repository. Your team will only need one repository, but should each have a seperate GitHub account. The owner of the repository should add the other members, by going to Settings &rarr; Collaborators, then entering the usernames of your team members.
 		</p>
 		<h2>Setting Everyting Up</h2>
 		<p>
 			First, you should navigate to the folder where all your project code is going to be stored. In the folder, right click, and there should be an option that says "Git Bash Here". If not, then shift+right click, and then click "Open command window here". Type <code>git</code> into the console, and a list of commands should appear. If not, you haven't installed git corrrectly.<br>
-			If it's working fine, type <code>git init</code>. It shoud give you <code>Initialized empty Git repository in &lt;folder&gt;/.git/</code>
+			If it's working fine, type <code>git init</code>. It shoud give you <code>Initialized empty Git repository in &lt;folder&gt;/.git/</code>.<br>
+			You should then make sure you're commiting into your GitHub repository you made before. To do this, use the command <code>git remote add origin https://github.com/Username/RepositoryName.git</code>. The .git that you should use should be shown in the screen where you have your empty repository, and should follow the pattern shown in the code sample.
 		</p>
-		<h2>Updating the Server-Sided Repository</h2>
+		<h2>Updating the Remote Repository</h2>
 		<p>
 			After you've made changes on your computer, you're going to want to also change the files in the online repository. To do this, there are a few commands you will need to use.<br>
 			First, you will have to <code>git add -A</code>. This command adds all (<code>-A</code> is short for <code>--all</code>) the changes you've changed to be commited later.<br>
@@ -43,7 +44,7 @@
 		</p>
 		<h2>Updating Your Local Repository</h2>
 		<p>
-			If your team members have changed things to the server-sided repository, you're going to want them on your local repository as well. To do this, you just excecute a <code>git pull</code>, which will update your copy to the one on the server. Make sure you do this every time you're going to change code, as you cannot push the code you've changed if it is not in sync with the server-sided copy.
+			If your team members have changed things to the remote repository, you're going to want them on your local repository as well. To do this, you just excecute a <code>git pull</code>, which will update your copy to the one on the server. Make sure you do this every time you're going to change code, as you cannot push the code you've changed if it is not in sync with the remote copy.
 		</p>
 	</div>
 </body>
