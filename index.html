@@ -3,8 +3,11 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style>
-		* {
+		* :not(code){
 			font-family:'Roboto', sans-serif;
+		}
+		code {
+			background-color: #DDDDDD;
 		}
 		h1 {
 			font-size: 30pt;
@@ -14,6 +17,7 @@
 		}
 		div {
 			padding-left: 20%;
+			padding-right: 15%;
 		}
 	</style>
 </head>
@@ -21,15 +25,21 @@
 <body>
 	<div>
 		<h1>Getting Started with Git and GitHub</h1>
+		<h2>Installing Git</h2>
 		<h2>Creating the Repo</h2>
 		<p>
-			
+			If you already have code
 		</p>
-		<h2>Updating the Repository</h2>
+		<h2>Updating the Server-Sided Repository</h2>
 		<p>
-			After you've made changes on your computer, you're going to want to also change the files in the online reposity. To do this, there are a few commands you will need to use.<br>
-			First, you will have to <code>git add -A</code>. This command adds all the changes you've changed to be commited later.<br>
-			Then, you'll need to commit to your repo with <code> git commit -m "commit message"</code>. You should specify what you have changed in this commit.
+			After you've made changes on your computer, you're going to want to also change the files in the online repository. To do this, there are a few commands you will need to use.<br>
+			First, you will have to <code>git add -A</code>. This command adds all (<code>-A</code> is short for <code>--all</code>) the changes you've changed to be commited later.<br>
+			Then, you'll need to commit to your repo with <code> git commit -m "commit message"</code>. You should specify what you have changed in this commit.<br>
+			Finally, you <code>git push -u origin master</code>.
+		</p>
+		<h2>Updating Your Local Repository</h2>
+		<p>
+			If your team members have changed things to the server-sided repository, you're going to want them on your local repository as well. To do this, you just excecute a <code>git pull</code>, which will update your copy to the one on the server. Make sure you do this every time you're going to change code, as you cannot push the code you've changed if it is not in sync with the server-sided copy.
 		</p>
 	</div>
 </body>
