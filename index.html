@@ -21,6 +21,22 @@
 
 <body>
 	<div>
+
+<!--
+TL;DR
+1. everybody makes an account on github
+2. someone makes a repo and adds everyone else to it
+3. everyone installs git on their computers
+4. git config --global user.email "email@example.com" and git config --global user.name "Username"
+5. git init
+6. git remote add origin https://github.com/Username/RepositoryName.git
+to update remote repo:
+git add -A
+git commit -m "message"
+git push -u origin master
+to update local repo:
+git pull
+-->
 		<h1>Getting Started with Git and GitHub</h1>
 		<h2>What is Git and GitHub?</h2>
 		<p>
@@ -29,6 +45,8 @@
 		<h2>Glossary</h2>
 		<ul>
 			<li><b>Repository</b>: A place where all your stuff is (how do you explain a repository?)</li>
+			<li><b>Commit</b>: These are hard to explain</li>
+			<li><b>Push</b>/<b>Pull</b>: To send/receive code kinda sorta</li>
 		</ul>
 		<h2>Installing Git</h2>
 		<p>
@@ -42,8 +60,8 @@
 		</p>
 		<h2>Updating the Remote Repository</h2>
 		<p>
-			After you've made changes on your computer, you're going to want to also change the files in the online repository. To do this, there are a few commands you will need to use.<br>
-			First, you will have to <code>git add -A</code>. This command adds all (<code>-A</code> is short for <code>--all</code>) the changes you've changed to be commited later.<br>
+			After you've made changes on your computer, you're going to want to also change the files in the remote repository. To do this, there are a few commands you will need to use.<br>
+			First, you will have to <code>git add -A</code>. This command adds all (<code>-A</code> is short for <code>--all</code>) the changes you've made to be commited later.<br>
 			Then, you'll need to commit to your repo with <code> git commit -m "commit message"</code>. You should specify what you have changed in this commit.<br>
 			Finally, you <code>git push -u origin master</code> to push your commit to the remote repository. The <code>-u</code>, short for <code>--set-upstream</code>, sets the place you always push and pull from.
 		</p>
